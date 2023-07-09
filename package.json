@@ -1,14 +1,22 @@
 {
-  "name": "baitap1.4.4",
+  "name": "beauty-clinic-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.13.7",
+    "@mui/material": "^5.13.7",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "tailwindcss": "^3.3.2",
+    "twin.macro": "^3.3.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +42,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.8",
+    "@emotion/babel-plugin-jsx-pragmatic": "^0.2.1",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.4",
+    "babel-plugin-twin": "^1.1.0",
+    "parcel-bundler": "^1.12.5"
+  },
+  "babelMacros": {
+    "twin": {
+      "preset": "emotion"
+    }
   }
 }
